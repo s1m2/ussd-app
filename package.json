@@ -1,0 +1,35 @@
+{
+  "name": "ussd-app",
+  "version": "1.0.0",
+  "description": "This is an implementation of africa's talking ussd to send messages",
+  "main": "server.js",
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "ts-node ./app/server.ts",
+    "start": "nodemon ./build/server.js",
+    "prod": "npm run build && npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s1m2/ussd-app.git"
+  },
+  "keywords": [
+    "ussd"
+  ],
+  "author": "sam macharia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/s1m2/ussd-app/issues"
+  },
+  "homepage": "https://github.com/s1m2/ussd-app#readme",
+  "dependencies": {
+    "@types/express": "^4.17.0",
+    "africastalking": "^0.4.0",
+    "dotenv": "^7.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "ts-node": "^8.2.0",
+    "typescript": "^3.5.1"
+  }
+}
