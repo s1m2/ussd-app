@@ -1,20 +1,20 @@
 import express from 'express';
-// import * as morgan from 'morgan';
+import morgan from 'morgan';
 
 class App {
 
-    public app: express.Application;
-    public port: number;
+    private app: express.Application;
+    private port: number;
 
     constructor(port: number) {
         this.app = express();
         this.port = port;
-        // this.intialization();
+        this.intialization();
     }
 
-    // private intialization(): void {
-    //     this.app.use(morgan('combined'));
-    // }
+    private intialization(): void {
+        this.app.use(morgan('combined'));
+    }
 
     public listen(): void {
         this.app.listen(this.port, () => {
