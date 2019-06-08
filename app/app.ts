@@ -18,7 +18,7 @@ class App {
 
     public listen(): void {
         this.app.listen(this.port, () => {
-            console.log(`Express is listening on port ${this.port}`);
+            console.log(`Express app is listening on port ${this.port}`);
         });
     }
 
