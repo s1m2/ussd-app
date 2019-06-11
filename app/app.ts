@@ -9,10 +9,10 @@ class App {
     constructor(port: number) {
         this.app = express();
         this.port = port;
-        this.intialization();
+        this.config();
     }
 
-    private intialization(): void {
+    private config(): void {
         this.app.use(morgan('combined'));
     }
 
