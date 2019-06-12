@@ -1,14 +1,17 @@
 import express from 'express';
 import morgan from 'morgan';
+import { Routes } from './routes/routes'
 
 class App {
 
     private app: express.Application;
     private port: number;
+    private routes: Routes = new Routes();
 
     constructor(port: number) {
         this.app = express();
         this.port = port;
+        this.routes.routes(this.app);
         this.config();
     }
 
