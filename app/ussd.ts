@@ -1,5 +1,5 @@
-const africastalking = require('africastalking');
+import africastalking from 'africastalking';
 
 const options = {
-    
+    api_ket : ''
 }
