@@ -2,7 +2,7 @@ import express from 'express';
 import morgan from 'morgan';
 import { Routes } from './routes/routes'
 
-class App {
+export class App {
 
     private app: express.Application;
     private port: number;
@@ -26,5 +26,3 @@ class App {
     }
 
 }
-
-export default App;
